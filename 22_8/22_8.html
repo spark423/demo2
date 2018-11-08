@@ -1,0 +1,259 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Your site's title should be here</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Your site's description should be here">
+    <meta name="keywords" content="Your site's keywords should be here">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <link rel="stylesheet" href="style_22_8.css"> 
+    <!--[if IE 6]>
+	<style type="text/css">
+		* html .group {
+			height: 1%;
+		}
+	</style>
+  <![endif]--> 
+    <!--[if IE 7]>
+	<style type="text/css">
+		*:first-child+html .group {
+			min-height: 1px;
+		}
+	</style>
+  <![endif]--> 
+    <!--[if lt IE 9]> 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script> 
+  <![endif]--> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,regular,italic,600,600italic,700,700italic,800,800italic&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin,latin-ext,vietnamese">
+  </head>
+  <script>
+    function getProjects() {
+      var xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+          var project = JSON.parse(this.response).project_list;
+          for (var i=0; i<project.length; i++) {
+            document.getElementById('project_list').innerHTML += "<div class='card_01'><p class='text-4'>" + project[i].projects[i].date +
+            "</p><div class='group-17'><div class='student-satisfaction'><img class='student-satisfaction-copy' src='images_22_8/student_satisfaction_copy.png' alt='' width='41' height='38'></div><p class='text-5'>" + project[i].projects[i].name + "</p><p class='text-6'>" + project[i].projects[i].numOfMembers  +  "</p> <p class='text-7'>" + project[i].projects[i].purpose + "</p></div></div>"
+
+
+
+
+
+    
+
+          }
+        }
+      }
+      xhttp.open("GET", "http://localhost:3000/project_list", true);
+      xhttp.send();
+    }
+
+
+
+  window.onload = getProjects();
+    
+
+
+
+
+
+  </script>
+  <body>
+    <div class="bg-holder">
+      <div class="bg"></div>
+    </div>
+    <div class="right-section">
+      <div class="top-section">
+        <div class="row-5 group">
+          <p class="text">My Archive Projects</p>
+          <img class="shape-31" src="images_22_8/shape_31.png" alt="" width="17" height="19">
+          <div class="h-line"></div>
+          <div class="search group">
+            <img class="search-icon" src="images_22_8/search_icon.png" alt="" width="15" height="16">
+            <p class="search-2">Search...</p>
+          </div>
+        </div>
+        <div class="h-line-2"></div>
+      </div>
+      <div class="row-2 group">
+        <div class="col">
+          <p class="text-2"><strong class="text-style-2">Easily search your projects by quick filter</strong><br class="text-style"><span class="text-style-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span></p>
+          <div class="category group">
+            <p class="text-3">Select All</p>
+            <div class="row group">
+              <p class="career">Career</p>
+              <p class="personal">Personal</p>
+              <p class="academic">Academic</p>
+              <p class="satisfaction">Satisfaction</p>
+              <p class="workflow">Workflow</p>
+              <p class="staff">Staff</p>
+              <p class="resources">Resources</p>
+            </div>
+            <p class="health">Health</p>
+          </div>
+
+
+          <div id="project_list" class="group-2 group">
+            <!--
+            <div class="card_01">
+              <p class="text-4">Aug 05, 2018</p>
+              <div class="group-17">
+                <div class="student-satisfaction">
+                  <img class="student-satisfaction-copy" src="images_22_8/student_satisfaction_copy.png" alt="" width="41" height="38">
+                </div>
+                <p class="text-5">Students Satisfaction Report</p>
+                <p class="text-6">42 members</p>
+                <p class="text-7"><span class="color3b3b3b">Purpose: &nbsp;</span>Lorem ipsum dolor sit amet, consect<br>etur adipiscing elit, sed do eiusmod tempor in<br>cididunt ut</p>
+              </div>
+            </div>
+            <div class="card_02">
+              <p class="text-8">Aug 01, 2018</p>
+              <div class="group-17-2">
+                <div class="student-satisfaction-2">
+                  <img class="academic-development-copy" src="images_22_8/academic_development_copy.png" alt="" width="44" height="29">
+                </div>
+                <p class="text-9">Academic Development Report</p>
+                <p class="text-10">50 members</p>
+                <p class="text-11"><span class="color3b3b3b">Purpose: &nbsp;</span>Lorem ipsum dolor sit amet, consect<br>etur adipiscing elit, sed do eiusmod tempor in<br>cididunt ut</p>
+              </div>
+            </div>
+            <div class="card_03">
+              <p class="text-12">Jul 31, 2018</p>
+              <div class="group-17-3">
+                <div class="student-satisfaction-3">
+                  <img class="student-career-copy" src="images_22_8/student_career_copy.png" alt="" width="40" height="31">
+                </div>
+                <p class="text-13">Career Development Discussion</p>
+                <p class="text-14">42 members</p>
+                <p class="text-15"><span class="color3b3b3b">Purpose: &nbsp;</span>Lorem ipsum dolor sit amet, consect<br>etur adipiscing elit, sed do eiusmod tempor in<br>cididunt ut</p>
+              </div>
+            </div>
+              <div class="card_01-2">
+              <p class="text-16">Jul 22, 2018</p>
+              <div class="group-17-4">
+                <div class="student-satisfaction-4">
+                  <img class="shape-6697-copy" src="images_22_8/shape_6697_copy.png" alt="" width="34" height="34">
+                </div>
+                <p class="text-17">All Project Goal Discussion</p>
+                <p class="text-18">82 members</p>
+                <p class="text-19"><span class="color3b3b3b">Purpose: &nbsp;</span>Lorem ipsum dolor sit amet, consect<br>etur adipiscing elit, sed do eiusmod tempor in<br>cididunt ut</p>
+              </div>
+            </div>
+              <div class="card_02-2">
+              <p class="text-20">Jul 22, 2018</p>
+              <div class="group-17-5">
+                <div class="student-satisfaction-5">
+                  <img class="shape-6692-copy" src="images_22_8/shape_6692_copy.png" alt="" width="35" height="34">
+                </div>
+                <p class="text-21">Personal Development Doc</p>
+                <p class="text-22">50 members</p>
+                <p class="text-23"><span class="color3b3b3b">Purpose: &nbsp;</span>Lorem ipsum dolor sit amet, consect<br>etur adipiscing elit, sed do eiusmod tempor in<br>cididunt ut</p>
+              </div>
+            </div>
+            <div class="card_03-2">
+              <p class="text-24">Jul 15, 2018</p>
+              <div class="group-17-6">
+                <div class="student-satisfaction-6">
+                  <img class="workflow-copy" src="images_22_8/workflow_copy.png" alt="" width="28" height="37">
+                </div>
+                <p class="text-25">Workflow Discussion</p>
+                <p class="text-26">42 members</p>
+                <p class="text-27"><span class="color3b3b3b">Purpose: &nbsp;</span>Lorem ipsum dolor sit amet, consect<br>etur adipiscing elit, sed do eiusmod tempor in<br>cididunt ut</p>
+              </div>
+          </div>
+            
+           <div class="card_01-3">
+              <p class="text-28">Jul 10, 2018</p>
+              <div class="group-17-7">
+                <div class="student-satisfaction-7">
+                  <img class="staff-professional-development-copy" src="images_22_8/staff_professional_develo.png" alt="" width="50" height="28">
+                </div>
+                <p class="text-29">Staff Report</p>
+                <p class="text-30">42 members</p>
+                <p class="text-31"><span class="color3b3b3b">Purpose: &nbsp;</span>Lorem ipsum dolor sit amet, consect<br>etur adipiscing elit, sed do eiusmod tempor in<br>cididunt ut</p>
+              </div>
+            </div>
+
+            <div class="card_02-3">
+              <p class="text-32">Jul 08, 2018</p>
+              <div class="group-17-8">
+                <div class="student-satisfaction-8">
+                  <img class="shape-6696-copy" src="images_22_8/shape_6696_copy.png" alt="" width="39" height="36">
+                </div>
+                <p class="text-33">Resources Discussion</p>
+                <p class="text-34">50 members</p>
+                <p class="text-35"><span class="color3b3b3b">Purpose: &nbsp;</span>Lorem ipsum dolor sit amet, consect<br>etur adipiscing elit, sed do eiusmod tempor in<br>cididunt ut</p>
+              </div>
+            </div>
+
+            <div class="card_03-3">
+              <p class="text-36">Jul 01, 2018</p>
+              <div class="group-17-9">
+                <div class="student-satisfaction-9">
+                  <img class="shape-6696-copy-2" src="images_22_8/shape_6696_copy_2.png" alt="" width="35" height="33">
+                </div>
+                <p class="text-37">Student Health Report</p>
+                <p class="text-38">42 members</p>
+                <p class="text-39"><span class="color3b3b3b">Purpose: &nbsp;</span>Lorem ipsum dolor sit amet, consect<br>etur adipiscing elit, sed do eiusmod tempor in<br>cididunt ut</p>
+              </div>
+            </div>
+            -->
+            </div>
+      
+           
+
+
+            
+            
+          
+
+
+        </div>
+      </div>
+    </div>
+    <div class="sidemenu">
+      <div class="v-l-copy"></div>
+      <div class="inbox">
+        <div class="me">
+          <p class="me-2">Me</p>
+        </div>
+        <div class="row-3 group">
+          <img class="shape-1172" src="images_22_8/shape_1172.png" alt="" width="14" height="16">
+          <div class="profile">
+            Profile
+          </div>
+        </div>
+      </div>
+      <div class="my-projects group">
+        <img class="shape-1080" src="images_22_8/shape_1080.png" alt="" width="12" height="17">
+        <p class="text-40">My Projects</p>
+        <div class="selection"></div>
+      </div>
+      <div class="tags group">
+        <img class="tags-2" src="images_22_8/tags.png" alt="" width="12" height="16">
+        <p class="text-41">My Tags</p>
+      </div>
+      <div class="my-responses group">
+        <img class="shape-1080-2" src="images_22_8/shape_1080_2.png" alt="" width="15" height="16">
+        <p class="text-42">Template Responses</p>
+      </div>
+      <div class="my-signatures group">
+        <img class="shape-1080-3" src="images_22_8/shape_1080_3.png" alt="" width="18" height="17">
+        <p class="text-43">My Signatures</p>
+      </div>
+      <div class="top-left-section group">
+        <div class="row-6 group">
+
+          <a class="close" href="/">
+            <img class="shape-1170" src="images_22_8/shape_1170.png" alt="" width="15" height="10">
+          </a>
+
+          <p class="close-2">Close</p>
+        </div>
+        <div class="seprator"></div>
+      </div>
+    </div>
+  </body>
+</html>
