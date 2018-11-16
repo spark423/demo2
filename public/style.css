@@ -3079,3 +3079,15 @@ html {
 [chat-active] #email-date {
   margin-right: 100px;
 }
+
+.write-a-comment {
+  width: 107%;
+}
+[chat-active] .write-a-comment {
+  width: 77%;
+  /* background-color: red; */
+}
+
+[chat-active] .big-right-section {
+  /* background-color: red; */
+}
