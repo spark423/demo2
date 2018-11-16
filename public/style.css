@@ -3082,7 +3082,14 @@ html {
 
 .write-a-comment {
   width: 107%;
+  /* color: grey; */
 }
+
+#thread-comment-input {
+  color: grey;
+
+}
+
 [chat-active] .write-a-comment {
   width: 77%;
   /* background-color: red; */
