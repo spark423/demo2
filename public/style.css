@@ -3156,3 +3156,11 @@ html {
 }
 
 /* maybe: <div class="h-line-2"></div> */
+
+#thread-comment-input {
+  width: 375%;
+}
+
+[chat-active] #thread-comment-input {
+  width: 250%;
+}
