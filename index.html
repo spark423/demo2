@@ -558,7 +558,7 @@
                     if (this.readyState == 4 && this.status == 200) {
                       var details = JSON.parse(this.response);
                       document.getElementById("comment_boxes").innerHTML +=
-                      '<div class="row-21"><div class="ellipse-3-24"></div><div class="col-6"><p class="text-66">' + details.by + ' . &nbsp;<span class="text-style-15">06:50 pm</span></p><div class="comment">' + details.text + '</div></div></div><div class="row-39 group"></div>'
+                      '<div class="row-21"><div class="col-6"><div class="ellipse-3-24"></div><p class="text-66">' + details.by + ' . &nbsp;<span class="text-style-15">06:50 pm</span></p><div class="comment">' + details.text + '</div></div></div><div class="row-39 group"></div>'
                       document.getElementById("thread-comment-input").value = "";
                       setTimeout(function(){
                         document.getElementById("comment_boxes").innerHTML +=  '<div class="group-9 group"><p class="text-67">Amanda Blake . &nbsp;<span class="text-style-15">06:55 pm</span></p><div class="ellipse-3-25"></div><div class="comment-2"> If anyone has any questions regarding documents or files from the last meeting, we should chat about in in the thread.</div><div class="replies group"><div class="ellipse-3-26"></div><p class="text-68"><strong class="text-style-16" onClick="chat_thread()">2 replies</strong> &nbsp;Last reply today at 4:00 pm</p></div></div>'
@@ -686,7 +686,7 @@
         </div>
       </div>
       <div class="copy-message group">
-        <div class="row-21 group">
+        <div class="channel-words group">
           <img class="checkbox" src="images/checkbox.png" alt="" width="12" height="12">
           <p class="text-65">also send to <strong class="text-style-11">#general</strong></p>
           <img class="shape-5739" src="images/shape_5739.png" alt="" width="14" height="14">

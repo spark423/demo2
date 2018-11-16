@@ -713,7 +713,7 @@ body {
   position: relative;
   width: 401px;
 }
-.row-21 {
+.channel-words {
   position: relative;
 }
 .ellipse-3-5 {
@@ -2766,6 +2766,7 @@ body {
 .text-65 {
   /* float: left; */
   margin: 0 0 0 7px;
+  /* top: 800px; */
   padding-right: 100px;
   color: #707070;
   font-size: 0.75rem; /* 12px / 16px = 0.75rem */
@@ -2880,7 +2881,7 @@ body {
   margin: 7px auto 0;
   min-height: 30px;
   padding: 6px 20px 5px;
-  width: 285px;
+  width: 205px;
   border: 1px solid #d4d4d4; /*stroke*/
   border-radius: 4px;
   background: #e8e8e8;
@@ -3108,14 +3109,18 @@ html {
 }
 
 /* first message */
-[chat-active] .row-21 {
+[chat-active] .col-6 {
   margin-left: 125px;
-  bottom: 100px;
+  bottom: 175px;
 }
+/* [chat-active] .ellipse-3-24 {
+  margin-left: 125px;
+  bottom: 175px;
+} */
 
 /* second message */
 [chat-active] .group-9 {
-  bottom: 100px;
+  bottom: 175px;
   margin-left: 125px;
 }
 
