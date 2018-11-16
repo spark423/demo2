@@ -28,11 +28,11 @@ app.get('/threads', function(req, res) {
                                     {
                                         "firstName": "Filip",
                                         "lastName": "Szamborski",
-                                        "picture": "http://www.catster.com/wp-content/uploads/2017/08/A-fluffy-cat-looking-funny-surprised-or-concerned.jpg",
+                                        "picture": "images/ellipse_3.png",
                                     },
-                            "date" : "8:05",
+                            "date" : "5:40",
                             "title": "Today's meeting opened",
-                            "text": "...", 
+                            "text": "Hello Amanda...", 
                         }
             }           
             //...max of 18 more
