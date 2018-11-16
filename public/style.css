@@ -3148,3 +3148,8 @@ html {
 [chat-active] .text-68 {
   top: 100px;
 }
+
+/* moved comment box up a little so it would stay in view */
+[chat-active] #comment-text-section {
+  bottom: 100px;
+}
