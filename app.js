@@ -32,9 +32,25 @@ app.get('/threads', function(req, res) {
                                     },
                             "date" : "8:05",
                             "title": "Today's meeting opened",
-                            "text": "Lorem", 
+                            "text": "...", 
                         }
-            }
+            },
+            {
+                "_id": 
+                            "aaaaaaa" ,
+                "email": 
+                        {
+                            "from" : 
+                                    {
+                                        "firstName": "Allen",
+                                        "lastName": "Binder",
+                                        "picture": "http://www.catster.com/wp-content/uploads/2017/08/A-fluffy-cat-looking-funny-surprised-or-concerned.jpg",
+                                    },
+                            "date" : "7:00",
+                            "title": "Survey on Work Environment",
+                            "text": "...", 
+                        }
+            }            
             //...max of 18 more
         ]})
 })
