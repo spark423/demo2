@@ -1041,9 +1041,9 @@ body {
   left: 5px;
   margin: 0 auto;
   position: relative;
-  width: 270px;
+  width: 335px;
   padding-bottom: 10px;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid lightgrey;
 }
 .ellipse-3-7 {
   float: left;
@@ -1062,6 +1062,7 @@ body {
   margin: 2px 0 0;
   position: relative;
   width: 237px;
+  margin-left: 5px;
 }
 .row-23 {
   position: relative;
@@ -3153,3 +3154,5 @@ html {
 [chat-active] #comment-text-section {
   bottom: 100px;
 }
+
+/* maybe: <div class="h-line-2"></div> */
